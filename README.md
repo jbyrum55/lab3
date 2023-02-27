@@ -5,8 +5,9 @@
 #### Name: Jason Byrum
 
 Names and usernames of teammates:
-* <teammate 1 name>, username
-* <teammate 2 name>, username
+  User1
+  User2
+  User3
 
 ---
 
@@ -23,21 +24,23 @@ gpg <the rest>
 
 * paste the relevant lines in `/etc/passwd` and `/etc/group` below that show you created your user
 
-```
 /etc/passwd
-...
+ ```
+  User1:x:1001:1001::/home/User1:/bin/sh
+  User2:x:1002:1002::/home/User2:/bin/sh
+  User3:x:1003:1003::/home/User3:/bin/sh
 
 /etc/group
-...
 
-```
+  User1:x:1001:
+  User2:x:1002:
+  User3:x:1003:
 
----
 
 ### Task 2 - Permissions
 
 * What were the permissions on each of the users' home directories?
-  
+    Each users home directory had the permissions of 755 read run and execute.
 
 ```
 command and output
@@ -45,17 +48,16 @@ command and output
 
 * What command did you use to change the permissions (full command used)?
 
-```
-command
-```
+  chmod 777 -R /home/User
 
 * What are the permissions on `/etc/shadow`?
+   ls -l /etc/shadow
+    -rw-r----- 1 root shadow 1075 Feb 24 21:24 /etc/shadow
 
-```
-command and output
-```
 
 * Why does `/etc/shadow` have the permissions that it does?
+    It is set with only the user root so that no other users can read the file and get the password hashes.
+
 * How did you accomplish this task?  IF you updated any of the files above
   (`/etc/passwd` or `/etc/group`) paste the relevant lines here.  
   
