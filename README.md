@@ -2,7 +2,7 @@
 
 ### Authentication and Permissions
 
-#### Name: <yourname>
+#### Name: Jason Byrum
 
 Names and usernames of teammates:
 * <teammate 1 name>, username
@@ -12,7 +12,7 @@ Names and usernames of teammates:
 
 ### Task 1 - Users
 
-* Type your simple password here: 
+* Type your simple password here: 12
 * Upload your `id_rsa.pub` to this repo (to the root directory as `id_rsa.pub`)
 * Encrypt your password with matthew.kijowski@wright.edu as the `--recipient` and upload it to `password.gpg`
 * Paste the commands used to encrypt your password to your teammates:
